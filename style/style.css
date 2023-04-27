@@ -307,6 +307,16 @@
   box-sizing: border-box;
 }
 
+.today_nav_list li:nth-child(3) {
+  background-color: #66c971;
+  color: white;
+}
+
+.today_nav_list li:nth-child(5) {
+  background-color: #c08d31;
+  color: white;
+}
+
 .today_nav_list li:last-child a {
   border-right: 1px solid #d5d3d3;
 }
@@ -333,6 +343,7 @@
 }
 
 .enter_top_box span {
+  font-weight: 700;
   color: #e65da0;
 }
 
@@ -361,6 +372,39 @@
   padding: 17px 20px;
   font-size: 13px;
   font-weight: 700;
+}
+
+.enter_sub {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.enter_sub_box {
+  width: 32%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.enter_sub_box img {
+  width: 100%;
+}
+
+.enter_sub_box span {
+  font-weight: 700;
+  color: #e65da0;
+}
+
+.enter_tit {
+  font-size: 13px;
+  color: #202020;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.media_source {
+  color: #505050;
 }
 
 /*===============================*/
@@ -435,6 +479,63 @@
 .sub_ad_banner iframe {
   width: 100%;
   height: 200px;
+}
+
+.trend_hd {
+  display: flex;
+  width: 100%;
+}
+
+.trend_hd li:first-child {
+  flex-grow: 1;
+}
+
+.trend_hd li a {
+  padding: 12px 5px;
+}
+
+.shop_hd {
+  border-bottom: none;
+}
+
+.shop_hd {
+  display: flex;
+  padding: 10px;
+  flex-flow: row wrap;
+  font-size: 11px;
+}
+
+.shop_hd ul {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.shop_contents {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #d5d3d3;
+  box-sizing: border-box;
+  font-size: 11px;
+  text-align: center;
+}
+
+.shop_content_box {
+  width: 31%;
+  margin-bottom: 10px;
+}
+
+.shop_content_box img {
+  width: 100%;
+}
+
+.shop_content_box span {
+  font-weight: 700;
+  white-space: pre;
 }
 
 /*========== 푸터 ==========*/
