@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naver</title>
     <link rel="stylesheet" href="style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="script/script.js"></script>
+
   </head>
   <body>
     <header class="header">
@@ -59,11 +61,12 @@
           <div class="main_lt__ad_area basic_box">루피의 세상은 요지경</div>
 
           <div class="main_lt__newsFlash_area basic_box">
-            <h2>연합뉴스 <img src="images/rt_icon.png" alt="연합뉴수"></h2>
+            <h2>연합뉴스 <img src="images/rt_icon.png" alt="연합뉴스"></h2>
             <ul class="main_lt__newsFlash_box">
-              <li><a href="#">경찰관 걷어차는 촉법소년</a></li>
-              <!-- <li><a href="#">경찰관 걷어차는 촉법소년</a></li>
-              <li><a href="#">경찰관 걷어차는 촉법소년</a></li> -->
+              <li><a href="#">1번 뉴스속보 입니다</a></li>
+              <li><a href="#">2번 뉴스속보 입니다</a></li>
+              <li><a href="#">3번 뉴스속보 입니다</a></li>
+              <li><a href="#">4번 뉴스속보 입니다</a></li>
             </ul>
             <div class="mian_lt__news_links_box">
               <a href="#"><span>뉴스홈</span></a>
@@ -88,35 +91,35 @@
             </div>
           </div>
           <div class="main_lt__press_area">
-            <div class="main_lt__press_box">
+            <div id="press_box" class="main_lt__press_box" >
+              <a href="#">
+                <img src="images/press_icon/press_1.png" alt="ohmyNews"/>
+              </a>
               <a href="#"
-                ><img src="images/press_icon/press_01.png" alt="ohmyNews"
+                ><img src="images/press_icon/press_2.png" alt="동아일보"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_02.png" alt="동아일보"
+                ><img src="images/press_icon/press_3.png" alt="이데일리"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_03.png" alt="이데일리"
+                ><img src="images/press_icon/press_4.png" alt="스포츠동아"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_04.png" alt="스포츠동아"
+                ><img src="images/press_icon/press_5.png" alt="전자신문"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_05.png" alt="전자신문"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_06.png" alt="JTBC"
+                ><img src="images/press_icon/press_6.png" alt="JTBC"
               /></a>
             </div>
             <div class="main_lt__press_box">
               <a href="#"
-                ><img src="images/press_icon/press_07.png" alt="MBN"
+                ><img src="images/press_icon/press_7.png" alt="MBN"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_08.png" alt="보안뉴스"
+                ><img src="images/press_icon/press_8.png" alt="보안뉴스"
               /></a>
               <a href="#"
-                ><img src="images/press_icon/press_09.png" alt="YTN사이언스"
+                ><img src="images/press_icon/press_9.png" alt="YTN사이언스"
               /></a>
               <a href="#"
                 ><img src="images/press_icon/press_10.png" alt="서울경제"
@@ -178,7 +181,7 @@
               </div>
               <div class="today_hd_box__info">
                 <p><span>649</span>개의 글</p>
-                <p>관심주제 설정</p>
+                <p><img src="images/option_icon.png" alt="관심주제설정"> 관심주제 설정</p>
               </div>
             </div>
           </div>
@@ -314,13 +317,51 @@
         </div>
         <div class="main_rt_wrap">
           <div class="login_box basic_box">
-            <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+            <!--            <div class="logout_state">
+              <p>네이버를 더 안전하고 편리하게 이용하세요</p>
             <button><span>NAVER</span>로그인</button>
             <ul class="login_links">
               <li><a href="#">아이디</a></li>
               <li><a href="#">비밀번호 찾기</a></li>
               <li><a href="#">회원가입</a></li>
-            </ul>
+            </ul> 
+            </div>
+            -->
+            <div class="loggin_state">
+              <div class="loggin_box">
+                <div class="loggin_top">
+                  <div class="loggin_pf">
+                    프로필이미지
+                  </div>
+                  <div class="loggin_info">
+                    <div class="loggin_info_top">
+                      <div class="loggin_my">
+                        마이페이지
+                      </div>
+                      <div class="loggin_btn">
+                        <a href="#" onclick="">로그아웃</a>
+                      </div>
+                    </div>
+                    <div class="loggin_info_bottom">
+                      <ul>
+                        <li><a href="#">메일<span>16</span></a></li>
+                        <li><a href="#">쪽지<span>214</span></a></li>
+                        <li><a href="#">시작하기<span>16</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="loggin_bottom">
+                  <a href="#">알림</a>
+                  <a href="#">구독</a>
+                  <a href="#">메일</a>
+                  <a href="#">카페</a>
+                  <a href="#">블로그</a>
+                </div>
+              </div>
+            </div>
+            
+            
           </div>
           <div class="issue_box basic_box">주식 환율 코로나 등등</div>
           <div class="sub_ad_banner">
@@ -334,7 +375,7 @@
           </div>
           <div class="trend_shop_wrap">
             <ul class="trend_hd">
-              <li><a href="#">트렌드쇼핑</a></li>
+              <li><img src="images/trend_shop_icon.png" alt="트렌드쇼핑"> <a href="#">트렌드쇼핑</a><img src="images/rt_gray_icon.png" alt="트렌드쇼핑 바로가기"></li>
               <li class="active"><a href="#">상품</a></li>
               <li><a href="#">쇼핑몰</a></li>
               <li><a href="#">MEN</a></li>
@@ -494,7 +535,7 @@
                       <a href="#"
                         ><span>보드라움</span>오가닉 순면이불 할인+무료배송!</a
                       >
-                    </li>image.png
+                    </li>
                     <li>
                       <span class="li_st"></span>
                       <a href="#"
