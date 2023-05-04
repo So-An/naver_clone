@@ -1,352 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naver</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="script/script.js"></script>
 
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrap">
-        <div class="header_area">
-          <div class="header_area__links">
-            <a href="#">네이버를 시작페이지로</a>
-            <a href="#">쥬니어네이버</a>
-            <a href="#">해피빈</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naver</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="header_area">
+        <div class="header_area__links">
+          <a href="#">네이버를 시작페이지로</a>
+          <a href="#">쥬니어네이버</a>
+          <a href="#">해피빈</a>
+        </div>
+        <div class="search_area">
+          <div class="logo_box"><a href="index.html">네이버</a></div>
+          <div class="search_area__search_box">
+            <input type="text" />
+            <button><img src="images/search_icon.png" alt="검색"></button>
           </div>
-          <div class="search_area">
-            <div class="logo_box"><a href="index.html">네이버</a></div>
-            <div class="search_area__search_box">
-              <input type="text" />
-              <button><img src="images/search_icon.png" alt="검색"></button>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="wrap">
+        <div class="gnb_wrap">
+          <ul class="gnb_wrap__gnb_area">
+            <li class="gnb_item active"><a href="#"><img src="images/nav/nav_mail_icon.png" alt="메일">메일</a></li>
+            <li class="gnb_item active"><a href="#">카페</a></li>
+            <li class="gnb_item active"><a href="#">블로그</a></li>
+            <li class="gnb_item active"><a href="#">지식iN</a></li>
+            <li class="gnb_item active"><a href="#">쇼핑</a></li>
+            <li class="gnb_item active"><a href="#"><img src="images/nav/nav_shoppinLive_icon.png" alt="쇼핑Live"></a>
+            </li>
+            <li class="gnb_item active"><a href="#">Pay</a></li>
+            <li class="gnb_item active"><a href="#"><img src="images/nav/nav_tv_icon.png" alt="TV">TV</a></li>
+            <li class="gnb_item"><a href="#">사전</a></li>
+            <li class="gnb_item"><a href="#">뉴스</a></li>
+            <li class="gnb_item"><a href="#">증권</a></li>
+            <li class="gnb_item"><a href="#">부동산</a></li>
+            <li class="gnb_item"><a href="#">지도</a></li>
+            <li class="gnb_item"><a href="#">VIBE</a></li>
+            <li class="gnb_item"><a href="#">도서</a></li>
+            <li class="gnb_item"><a href="#">웹툰</a></li>
+            <li class="gnb_item"><a href="#">더보기<img src="images/nav/nav_viewmore_icon.png" alt="더보기"></a></li>
+          </ul>
+        </div>
+        <div class="weather_wrap">날씨바?</div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="wrap">
+      <div class="main_lt_wrap">
+        <div class="main_lt__ad_area basic_box">루피의 세상은 요지경</div>
+
+        <div class="main_lt__newsFlash_area basic_box">
+          <h2>연합뉴스 <img src="images/rt_icon.png" alt="연합뉴스"></h2>
+          <ul class="main_lt__newsFlash_box">
+            <li><a href="#">1번 뉴스속보 입니다</a></li>
+            <li><a href="#">2번 뉴스속보 입니다</a></li>
+            <li><a href="#">3번 뉴스속보 입니다</a></li>
+            <li><a href="#">4번 뉴스속보 입니다</a></li>
+          </ul>
+          <div class="mian_lt__news_links_box">
+            <a href="#"><span>뉴스홈</span></a>
+            <span></span>
+            <a href="#">연예</a>
+            <a href="#">스포츠</a>
+            <a href="#">경제</a>
+          </div>
+        </div>
+
+        <div class="main_lt__news_tit_area">
+          <div class="main_lt__news_tit_box">
+            <a href="#"><img src="images/news_tit_icon.png" alt="뉴스스탠드"><span>뉴스스탠드</span></a>
+            <a href="#">구독한 언론사</a>
+            <span></span>
+            <a href="#">전체언론사</a>
+          </div>
+          <div class="main_lt__news_tit_icon_box">
+            <a href="#"><img src="images/news_tit_list_icon_black.png" alt="리스트로보기"></a>
+            <a href="#"><img src="images/news_tit_grid_icon_black.png" alt="그리드로보기"></a>
+            <a href="#"><img src="images/news_tit_option_icon.png" alt="환경설정"></a>
+          </div>
+        </div>
+        <div class="main_lt__press_area">
+          <div id="press_box" class="main_lt__press_box">
+            <a href="#">
+              <img src="images/press_icon/press_1.png" alt="ohmyNews" />
+            </a>
+            <a href="#"><img src="images/press_icon/press_2.png" alt="동아일보" /></a>
+            <a href="#"><img src="images/press_icon/press_3.png" alt="이데일리" /></a>
+            <a href="#"><img src="images/press_icon/press_4.png" alt="스포츠동아" /></a>
+            <a href="#"><img src="images/press_icon/press_5.png" alt="전자신문" /></a>
+            <a href="#"><img src="images/press_icon/press_6.png" alt="JTBC" /></a>
+          </div>
+          <div class="main_lt__press_box">
+            <a href="#"><img src="images/press_icon/press_7.png" alt="MBN" /></a>
+            <a href="#"><img src="images/press_icon/press_8.png" alt="보안뉴스" /></a>
+            <a href="#"><img src="images/press_icon/press_9.png" alt="YTN사이언스" /></a>
+            <a href="#"><img src="images/press_icon/press_10.png" alt="서울경제" /></a>
+            <a href="#"><img src="images/press_icon/press_11.png" alt="세계일보" /></a>
+            <a href="#"><img src="images/press_icon/press_12.png" alt="Biz Watch" /></a>
+          </div>
+          <div class="main_lt__press_box">
+            <a href="#"><img src="images/press_icon/press_13.png" alt="Tjb대전방송" /></a>
+            <a href="#"><img src="images/press_icon/press_14.png" alt="부산일보" /></a>
+            <a href="#"><img src="images/press_icon/press_15.png" alt="뉴스펭귄" /></a>
+            <a href="#"><img src="images/press_icon/press_16.png" alt="아리랑" /></a>
+            <a href="#"><img src="images/press_icon/press_17.png" alt="EBS" /></a>
+            <a href="#"><img src="images/press_icon/press_18.png" alt="MBC" /></a>
+          </div>
+          <div class="main_lt__press_box">
+            <a href="#"><img src="images/press_icon/press_19.png" alt="맥스무비" /></a>
+            <a href="#"><img src="images/press_icon/press_20.png" alt="한국대학신문" /></a>
+            <a href="#"><img src="images/press_icon/press_21.png" alt="일요시사" /></a>
+            <a href="#"><img src="images/press_icon/press_22.png" alt="YTN" /></a>
+            <a href="#"><img src="images/press_icon/press_23.png" alt="스포츠투데이" /></a>
+            <a href="#"><img src="images/press_icon/press_24.png" alt="SBS연예뉴스" /></a>
+          </div>
+        </div>
+
+        <div class="main_lt__today_area">
+          <div class="main_lt__today_hd_box">
+            <div class="today_hd_box__tit">
+              <span>오늘 읽을만한 글</span>
+              <p>주제별로 분류된 다양한 글 모음</p>
+            </div>
+            <div class="today_hd_box__info">
+              <p><span>649</span>개의 글</p>
+              <p><img src="images/option_icon.png" alt="관심주제설정"> 관심주제 설정</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_lt__today_nav_area">
+          <div class="main_lt__today_nav_box">
+            <a href="#">엔터</a>
+            <a href="#">스포츠</a>
+            <a href="#">웹툰</a>
+            <a href="#">패션뷰티</a>
+            <a href="#">레시피</a>
+            <a href="#">리빙</a>
+            <a href="#">책방</a>
+            <a href="#">경제</a>
+          </div>
+        </div>
+        <div class="main_lt__today_contents_area">
+          <div class="inner">
+            <div class="main_lt__today_content_box">
+              <div class="today_content_box hot_content">
+                <img src="images/today/enter/top1.jpeg" alt="엑스오,키티" />
+                <span>엑스오, 키티 | 예고편</span>
+                <p class="enter_tit">
+                  《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
+                  시작된다
+                </p>
+                <p class="media_source">Netfilx Korea</p>
+              </div>
+              <div class="today_content_box hot_content">
+                <img src="images/today/enter/top2.jpeg" alt="더 디저트" />
+                <span>더 디저트 | 1화 풀클립</span>
+                <p class="enter_tit">
+                  꿈빛 파티시엘 현실판! 국내 최초 디저트 서바이벌🧑‍🍳
+                </p>
+                <p class="media_source">TVING</p>
+              </div>
+            </div>
+            <div class="enter_nav basic_box">
+              <ul>
+                <li><a href="#">연예 홈</a></li>
+                <li><a href="#">네이버 NOW.</a></li>
+                <li><a href="#">네이버 TV홈</a></li>
+                <li><a href="#">TOP100</a></li>
+                <li><a href="#">시리즈온</a></li>
+                <li><a href="#">VIBE</a></li>
+              </ul>
+            </div>
+            <div class="enter_sub">
+              <div class="today_content_box">
+                <img src="images/today/enter/media_1.jpg" alt="엑스오,키티" />
+                <span>TV 드라마</span>
+                <p class="enter_tit">
+                  [2화 선공개]검사 아들에~ 국회의원 사돈에~
+                </p>
+                <p class="media_source">나쁜엄마</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_2.jpg" alt="엑스오,키티" />
+                <span>엑스오, 키티 | 예고편</span>
+                <p class="enter_tit">
+                  《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
+                  시작된다
+                </p>
+                <p class="media_source">Netfilx Korea</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_3.jpg" alt="엑스오,키티" />
+                <span>TV 예능</span>
+                <p class="enter_tit">
+                  빅뱅의 '거짓말', '하루하루'로 히트 친 후 변한 것은?
+                  (ft.유두래곤) #highlight
+                </p>
+                <p class="media_source">유 퀴즈 온 더 블럭</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_4.jpg" alt="나는 SOLO" />
+                <span>TV 예능</span>
+                <p class="enter_tit">
+                  두 번의 고독 정식은 없다! 각성한 솔로녀들의 질주! 끝없는
+                  트라이앵글의 시작...?ㅣ나는솔로 EP.94ㅣSBS PLUSㅣ매주 수요일
+                  밤 10시 30분 방송
+                </p>
+                <p class="media_source">나는 SOLO</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_5.jpg" alt="엑스오,키티" />
+                <span>TV 예능</span>
+                <p class="enter_tit">
+                  《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
+                  시작된다
+                </p>
+                <p class="media_source">Netfilx Korea</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_6.jpg" alt="나는 SOLO" />
+                <span>TV 예능</span>
+                <p class="enter_tit">
+                  나이 차이가 뭐가 중요해요, 티키타카가 끊이지 않는 진짜! 들의
+                  데이트...?ㅣ나는솔로 EP.94ㅣSBS PLUSㅣ매주 수요일 밤 10시
+                  30분 방송
+                </p>
+                <p class="media_source">나는 SOLO</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_7.jpg" alt="비밀의 여자" />
+                <span>TV 드라마</span>
+                <p class="enter_tit">
+                  약 탄 와인에 쓰러진 한기웅?! 하룻밤 유혹에 성공한 최윤영! |
+                  KBS 230427 방송
+                </p>
+                <p class="media_source">비밀의 여자</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_8.jpg" alt="비밀의 여자" />
+                <span>TV 드라마</span>
+                <p class="enter_tit">
+                  “언제까지 불륜녀로 둘 거야” 임혁에게 야단맞곤 한기웅에 관계
+                  정리를 요구하는 이채영 | KBS 230427 방송
+                </p>
+                <p class="media_source">비밀의 여자</p>
+              </div>
+              <div class="today_content_box">
+                <img src="images/today/enter/media_9.jpg" alt="택배기사 공식예고편" />
+                <span>TV 드라마</span>
+                <p class="enter_tit">[넷플릭스]택배기사|공식 예고편</p>
+                <p class="media_source">Netfilx Korea</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <nav class="nav">
-        <div class="wrap">
-          <div class="gnb_wrap">
-            <ul class="gnb_wrap__gnb_area">
-              <li class="gnb_item active"><a href="#"><img src="images/nav/nav_mail_icon.png" alt="메일">메일</a></li>
-              <li class="gnb_item active"><a href="#">카페</a></li>
-              <li class="gnb_item active"><a href="#">블로그</a></li>
-              <li class="gnb_item active"><a href="#">지식iN</a></li>
-              <li class="gnb_item active"><a href="#">쇼핑</a></li>
-              <li class="gnb_item active"><a href="#"><img src="images/nav/nav_shoppinLive_icon.png" alt="쇼핑Live"></a></li>
-              <li class="gnb_item active"><a href="#">Pay</a></li>
-              <li class="gnb_item active"><a href="#"><img src="images/nav/nav_tv_icon.png" alt="TV">TV</a></li>
-              <li class="gnb_item"><a href="#">사전</a></li>
-              <li class="gnb_item"><a href="#">뉴스</a></li>
-              <li class="gnb_item"><a href="#">증권</a></li>
-              <li class="gnb_item"><a href="#">부동산</a></li>
-              <li class="gnb_item"><a href="#">지도</a></li>
-              <li class="gnb_item"><a href="#">VIBE</a></li>
-              <li class="gnb_item"><a href="#">도서</a></li>
-              <li class="gnb_item"><a href="#">웹툰</a></li>
-              <li class="gnb_item"><a href="#">더보기<img src="images/nav/nav_viewmore_icon.png" alt="더보기"></a></li>
-            </ul>
-          </div>
-          <div class="weather_wrap">날씨바?</div>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="wrap">
-        <div class="main_lt_wrap">
-          <div class="main_lt__ad_area basic_box">루피의 세상은 요지경</div>
-
-          <div class="main_lt__newsFlash_area basic_box">
-            <h2>연합뉴스 <img src="images/rt_icon.png" alt="연합뉴스"></h2>
-            <ul class="main_lt__newsFlash_box">
-              <li><a href="#">1번 뉴스속보 입니다</a></li>
-              <li><a href="#">2번 뉴스속보 입니다</a></li>
-              <li><a href="#">3번 뉴스속보 입니다</a></li>
-              <li><a href="#">4번 뉴스속보 입니다</a></li>
-            </ul>
-            <div class="mian_lt__news_links_box">
-              <a href="#"><span>뉴스홈</span></a>
-              <span></span>
-              <a href="#">연예</a>
-              <a href="#">스포츠</a>
-              <a href="#">경제</a>
-            </div>
-          </div>
-
-          <div class="main_lt__news_tit_area">
-            <div class="main_lt__news_tit_box">
-              <a href="#"><img src="images/news_tit_icon.png" alt="뉴스스탠드"><span>뉴스스탠드</span></a>
-              <a href="#">구독한 언론사</a>
-              <span></span>
-              <a href="#">전체언론사</a>
-            </div>
-            <div class="main_lt__news_tit_icon_box">
-              <a href="#"><img src="images/news_tit_list_icon_black.png" alt="리스트로보기"></a>
-              <a href="#"><img src="images/news_tit_grid_icon_black.png" alt="그리드로보기"></a>
-              <a href="#"><img src="images/news_tit_option_icon.png" alt="환경설정"></a>
-            </div>
-          </div>
-          <div class="main_lt__press_area">
-            <div id="press_box" class="main_lt__press_box" >
-              <a href="#">
-                <img src="images/press_icon/press_1.png" alt="ohmyNews"/>
-              </a>
-              <a href="#"
-                ><img src="images/press_icon/press_2.png" alt="동아일보"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_3.png" alt="이데일리"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_4.png" alt="스포츠동아"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_5.png" alt="전자신문"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_6.png" alt="JTBC"
-              /></a>
-            </div>
-            <div class="main_lt__press_box">
-              <a href="#"
-                ><img src="images/press_icon/press_7.png" alt="MBN"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_8.png" alt="보안뉴스"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_9.png" alt="YTN사이언스"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_10.png" alt="서울경제"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_11.png" alt="세계일보"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_12.png" alt="Biz Watch"
-              /></a>
-            </div>
-            <div class="main_lt__press_box">
-              <a href="#"
-                ><img src="images/press_icon/press_13.png" alt="Tjb대전방송"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_14.png" alt="부산일보"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_15.png" alt="뉴스펭귄"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_16.png" alt="아리랑"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_17.png" alt="EBS"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_18.png" alt="MBC"
-              /></a>
-            </div>
-            <div class="main_lt__press_box">
-              <a href="#"
-                ><img src="images/press_icon/press_19.png" alt="맥스무비"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_20.png" alt="한국대학신문"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_21.png" alt="일요시사"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_22.png" alt="YTN"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_23.png" alt="스포츠투데이"
-              /></a>
-              <a href="#"
-                ><img src="images/press_icon/press_24.png" alt="SBS연예뉴스"
-              /></a>
-            </div>
-          </div>
-
-          <div class="main_lt__today_area">
-            <div class="main_lt__today_hd_box">
-              <div class="today_hd_box__tit">
-                <span>오늘 읽을만한 글</span>
-                <p>주제별로 분류된 다양한 글 모음</p>
-              </div>
-              <div class="today_hd_box__info">
-                <p><span>649</span>개의 글</p>
-                <p><img src="images/option_icon.png" alt="관심주제설정"> 관심주제 설정</p>
-              </div>
-            </div>
-          </div>
-          <div class="main_lt__today_nav_area">
-            <div class="main_lt__today_nav_box">
-              <a href="#">엔터</a>
-              <a href="#">스포츠</a>
-              <a href="#">웹툰</a>
-              <a href="#">패션뷰티</a>
-              <a href="#">레시피</a>
-              <a href="#">리빙</a>
-              <a href="#">책방</a>
-              <a href="#">경제</a>
-            </div>
-          </div>
-          <div class="main_lt__today_contents_area">
-            <div class="inner">
-              <div class="main_lt__today_content_box">
-                <div class="today_content_box hot_content">
-                  <img src="images/today/enter/top1.jpeg" alt="엑스오,키티" />
-                  <span>엑스오, 키티 | 예고편</span>
-                  <p class="enter_tit">
-                    《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
-                    시작된다
-                  </p>
-                  <p class="media_source">Netfilx Korea</p>
-                </div>
-                <div class="today_content_box hot_content">
-                  <img src="images/today/enter/top2.jpeg" alt="더 디저트" />
-                  <span>더 디저트 | 1화 풀클립</span>
-                  <p class="enter_tit">
-                    꿈빛 파티시엘 현실판! 국내 최초 디저트 서바이벌🧑‍🍳
-                  </p>
-                  <p class="media_source">TVING</p>
-                </div>
-              </div>
-              <div class="enter_nav basic_box">
-                <ul>
-                  <li><a href="#">연예 홈</a></li>
-                  <li><a href="#">네이버 NOW.</a></li>
-                  <li><a href="#">네이버 TV홈</a></li>
-                  <li><a href="#">TOP100</a></li>
-                  <li><a href="#">시리즈온</a></li>
-                  <li><a href="#">VIBE</a></li>
-                </ul>
-              </div>
-              <div class="enter_sub">
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_1.jpg" alt="엑스오,키티" />
-                  <span>TV 드라마</span>
-                  <p class="enter_tit">
-                    [2화 선공개]검사 아들에~ 국회의원 사돈에~
-                  </p>
-                  <p class="media_source">나쁜엄마</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_2.jpg" alt="엑스오,키티" />
-                  <span>엑스오, 키티 | 예고편</span>
-                  <p class="enter_tit">
-                    《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
-                    시작된다
-                  </p>
-                  <p class="media_source">Netfilx Korea</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_3.jpg" alt="엑스오,키티" />
-                  <span>TV 예능</span>
-                  <p class="enter_tit">
-                    빅뱅의 '거짓말', '하루하루'로 히트 친 후 변한 것은?
-                    (ft.유두래곤) #highlight
-                  </p>
-                  <p class="media_source">유 퀴즈 온 더 블럭</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_4.jpg" alt="나는 SOLO" />
-                  <span>TV 예능</span>
-                  <p class="enter_tit">
-                    두 번의 고독 정식은 없다! 각성한 솔로녀들의 질주! 끝없는
-                    트라이앵글의 시작...?ㅣ나는솔로 EP.94ㅣSBS PLUSㅣ매주 수요일
-                    밤 10시 30분 방송
-                  </p>
-                  <p class="media_source">나는 SOLO</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_5.jpg" alt="엑스오,키티" />
-                  <span>TV 예능</span>
-                  <p class="enter_tit">
-                    《내가 사랑했던 모든 남자들에게》, 그 새로운 이야기가
-                    시작된다
-                  </p>
-                  <p class="media_source">Netfilx Korea</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_6.jpg" alt="나는 SOLO" />
-                  <span>TV 예능</span>
-                  <p class="enter_tit">
-                    나이 차이가 뭐가 중요해요, 티키타카가 끊이지 않는 진짜! 들의
-                    데이트...?ㅣ나는솔로 EP.94ㅣSBS PLUSㅣ매주 수요일 밤 10시
-                    30분 방송
-                  </p>
-                  <p class="media_source">나는 SOLO</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_7.jpg" alt="비밀의 여자" />
-                  <span>TV 드라마</span>
-                  <p class="enter_tit">
-                    약 탄 와인에 쓰러진 한기웅?! 하룻밤 유혹에 성공한 최윤영! |
-                    KBS 230427 방송
-                  </p>
-                  <p class="media_source">비밀의 여자</p>
-                </div>
-                <div class="today_content_box">
-                  <img src="images/today/enter/media_8.jpg" alt="비밀의 여자" />
-                  <span>TV 드라마</span>
-                  <p class="enter_tit">
-                    “언제까지 불륜녀로 둘 거야” 임혁에게 야단맞곤 한기웅에 관계
-                    정리를 요구하는 이채영 | KBS 230427 방송
-                  </p>
-                  <p class="media_source">비밀의 여자</p>
-                </div>
-                <div class="today_content_box">
-                  <img
-                    src="images/today/enter/media_9.jpg"
-                    alt="택배기사 공식예고편"
-                  />
-                  <span>TV 드라마</span>
-                  <p class="enter_tit">[넷플릭스]택배기사|공식 예고편</p>
-                  <p class="media_source">Netfilx Korea</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main_rt_wrap">
-          <div class="login_box basic_box">
-            <!--            <div class="logout_state">
-              <p>네이버를 더 안전하고 편리하게 이용하세요</p>
-            <button><span>NAVER</span>로그인</button>
+      <div class="main_rt_wrap">
+        <div id="loggin_area" class="login_box basic_box">
+          <div id="logout_state">
+            <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+            <button onclick="loggin()"><span>NAVER</span>로그인</button>
             <ul class="login_links">
               <li><a href="#">아이디</a></li>
               <li><a href="#">비밀번호 찾기</a></li>
               <li><a href="#">회원가입</a></li>
-            </ul> 
-            </div>
-            -->
-            <div class="loggin_state">
+            </ul>
+          </div>
+
+          <!-- <div id="loggin_state">
               <div class="loggin_box">
                 <div class="loggin_top">
                   <div class="loggin_pf">
                     프로필이미지
+                    <div class="loggin_pf_option">
+                    </div>
                   </div>
                   <div class="loggin_info">
                     <div class="loggin_info_top">
                       <div class="loggin_my">
-                        마이페이지
+                        <ul>
+                          <li>넴모빔</li>
+                          <li>네이버ID <img src="images/login_security_icon.png" alt="보안아이콘"></li>
+                        </ul>
+                        <ul>
+                          <li>nemonemo@email.com</li>
+                        </ul>
                       </div>
                       <div class="loggin_btn">
-                        <a href="#" onclick="">로그아웃</a>
+                        <a href="#" id="loggout" onclick="">로그아웃</a>
                       </div>
                     </div>
                     <div class="loggin_info_bottom">
                       <ul>
                         <li><a href="#">메일<span>16</span></a></li>
                         <li><a href="#">쪽지<span>214</span></a></li>
-                        <li><a href="#">시작하기<span>16</span></a></li>
+                        <li><a href="#"><img src="images/naver_plus_icon.png" alt="네이버플러스">시작하기</a></li>
                       </ul>
                     </div>
                   </div>
@@ -359,289 +321,438 @@
                   <a href="#">블로그</a>
                 </div>
               </div>
+            </div> -->
+
+
+        </div>
+        <div class="my_service">
+          <div class="my_service_area">
+            <div class="service_hd">
+              <div class="service_hd_box">
+                <div class="service_hd_tit">
+                  <p>전체알림</p>
+                </div>
+                <div class="service_hd_subtit">
+                  <a href="#">읽은 알림 삭제</a>
+                  <span></span>
+                  <a href="#">전체 삭제</a>
+                </div>
+              </div>
             </div>
-            
-            
-          </div>
-          <div class="issue_box basic_box">주식 환율 코로나 등등</div>
-          <div class="sub_ad_banner">
-            <iframe
-              src="https://www.youtube.com/embed/rrI7tOhoVzA?autoplay=1&mute=1&controls=0"
-              title="뮤지컬 데스노트 MV_Death Note(홍광호)"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="trend_shop_wrap">
-            <ul class="trend_hd">
-              <li><img src="images/trend_shop_icon.png" alt="트렌드쇼핑"> <a href="#">트렌드쇼핑</a><img src="images/rt_gray_icon.png" alt="트렌드쇼핑 바로가기"></li>
-              <li class="active"><a href="#">상품</a></li>
-              <li><a href="#">쇼핑몰</a></li>
-              <li><a href="#">MEN</a></li>
-            </ul>
-            <div class="shop_box">
-              <div class="shop_hd basic_box">
-                <ul>
+            <div class="service_body">
+              <div class="timeline_wrap">
+                <ul class="timeline_list">
                   <li>
-                    <a href="#">쿠팡</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">G마켓</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">옥션</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">11번가</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">SSG닷컴</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">올리브영</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
-                </ul>
-                <ul>
                   <li>
-                    <a href="#">위메프</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#">GS샵</a>
-                  </li>
-                  <li>
-                    <a href="#">CJ온스타일</a>
-                  </li>
-                  <li>
-                    <a href="#">패션플러스</a>
-                  </li>
-                  <li>
-                    <a href="#">CJ더마켓</a>
+                    <div class="timeline_info">
+                      <a href="#">
+                        <div class="timeline_info_tit">
+                          <span>6년 전, 28장의 사진이 도착했어요</span>
+                        </div>
+                        <div class="timeline_info_sub">
+                          <span>네이버 MYBOX</span>
+                          <span>by 6년전</span>
+                          <span>오전 9시 08분</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="timeline_delete">
+                      <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+                    </div>
                   </li>
                 </ul>
               </div>
-              <div class="shop_contents">
-                <div class="shoppinng_ad_box">
-                  <div class="shop_content_topBtn">
-                    <span>1/18</span>
-                    <button>&#60;</button>
-                    <button>&#62;</button>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_01.jpg" alt="쇼핑이미지" />
-                    <span>3900원 실화야?</span>
-                    <p>단독구매 불가!</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_02.jpg" alt="쇼핑이미지" />
-                    <span>쌩얼이 신세계!</span>
-                    <p>눈밑에만 발랐어</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_03.jpg" alt="쇼핑이미지" />
-                    <span>오나미 픽 마스크</span>
-                    <p>정말 장당 236원?</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_04.jpg" alt="쇼핑이미지" />
-                    <span>귀여워서~심쿵~</span>
-                    <p>신상 9,800원</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_05.jpg" alt="쇼핑이미지" />
-                    <span>썸머카디건10%OFF</span>
-                    <p>매일매일 찾을걸?</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_06.jpg" alt="쇼핑이미지" />
-                    <span>매년 인기 있어요</span>
-                    <p>쿨 밴딩 데님팬츠</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_07.jpg" alt="쇼핑이미지" />
-                    <span>전상품 UPTO50%↓</span>
-                    <p>역대급 반응폭발!</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_08.jpg" alt="쇼핑이미지" />
-                    <span>놓치면 후회 특가</span>
-                    <p>최대~80%</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_09.jpg" alt="쇼핑이미지" />
-                    <span>진짜 극락갈정도</span>
-                    <p>시원함을 느껴요!</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_10.jpg" alt="쇼핑이미지" />
-                    <span>가볍게~들어요</span>
-                    <p>최대50%SALE</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_11.jpg" alt="쇼핑이미지" />
-                    <span>여름까지 가볍게</span>
-                    <p>예쁜 바람막이~</p>
-                  </div>
-                  <div class="shop_content_box">
-                    <img src="images/shop/shop_12.jpg" alt="쇼핑이미지" />
-                    <span>우린품격을입어요</span>
-                    <p>극찬받는 퀄리티</p>
-                  </div>
-                  <div class="shop_content_bottomBtn">
-                    <button>&#60;</button>
-                    <span>1/18</span>
-                    <button>&#62;</button>
-                  </div>
+            </div>
+            <div class="service_footer">
+              <div class="service_footer_box">
+                <a href="#">읽은 알림 삭제</a>
+                <a href="#">전체 삭제</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="issue_box basic_box">주식 환율 코로나 등등</div>
+        <div class="sub_ad_banner">
+          <iframe src="https://www.youtube.com/embed/rrI7tOhoVzA?autoplay=1&mute=1&controls=0"
+            title="뮤지컬 데스노트 MV_Death Note(홍광호)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="trend_shop_wrap">
+          <ul class="trend_hd">
+            <li><img src="images/trend_shop_icon.png" alt="트렌드쇼핑"> <a href="#">트렌드쇼핑</a><img
+                src="images/rt_gray_icon.png" alt="트렌드쇼핑 바로가기"></li>
+            <li class="active"><a href="#">상품</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+            <li><a href="#">MEN</a></li>
+          </ul>
+          <div class="shop_box">
+            <div class="shop_hd basic_box">
+              <ul>
+                <li>
+                  <a href="#">쿠팡</a>
+                </li>
+                <li>
+                  <a href="#">G마켓</a>
+                </li>
+                <li>
+                  <a href="#">옥션</a>
+                </li>
+                <li>
+                  <a href="#">11번가</a>
+                </li>
+                <li>
+                  <a href="#">SSG닷컴</a>
+                </li>
+                <li>
+                  <a href="#">올리브영</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">위메프</a>
+                </li>
+                <li>
+                  <a href="#">GS샵</a>
+                </li>
+                <li>
+                  <a href="#">CJ온스타일</a>
+                </li>
+                <li>
+                  <a href="#">패션플러스</a>
+                </li>
+                <li>
+                  <a href="#">CJ더마켓</a>
+                </li>
+              </ul>
+            </div>
+            <div class="shop_contents">
+              <div class="shoppinng_ad_box">
+                <div class="shop_content_topBtn">
+                  <span>1/18</span>
+                  <button>&#60;</button>
+                  <button>&#62;</button>
                 </div>
-                <hr />
-                <div class="shopping_news_box">
-                  <div class="shopping_news_hd">
-                    <p>반갑다! 쇼핑뉴스</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>부영글로벌</span>2단 파라솔 14%↓할인중!</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>오뚜기mall</span>오뚜기 컵누들 짜장맛 무료배송</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>매일멍냥</span>카루 고양이습식 27%↓파격세일</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>마그피아</span>붙이는화이트보드 전제품
-                        98%↓세일</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>김성훈도자기</span>쏘에르 콜라보 최대 47%할인!</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>보드라움</span>오가닉 순면이불 할인+무료배송!</a
-                      >
-                    </li>
-                    <li>
-                      <span class="li_st"></span>
-                      <a href="#"
-                        ><span>엘리샤펫</span>강아지 밀림방지 배변패드 75%↓</a
-                      >
-                    </li>
-                  </ul>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_01.jpg" alt="쇼핑이미지" />
+                  <span>3900원 실화야?</span>
+                  <p>단독구매 불가!</p>
                 </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_02.jpg" alt="쇼핑이미지" />
+                  <span>쌩얼이 신세계!</span>
+                  <p>눈밑에만 발랐어</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_03.jpg" alt="쇼핑이미지" />
+                  <span>오나미 픽 마스크</span>
+                  <p>정말 장당 236원?</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_04.jpg" alt="쇼핑이미지" />
+                  <span>귀여워서~심쿵~</span>
+                  <p>신상 9,800원</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_05.jpg" alt="쇼핑이미지" />
+                  <span>썸머카디건10%OFF</span>
+                  <p>매일매일 찾을걸?</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_06.jpg" alt="쇼핑이미지" />
+                  <span>매년 인기 있어요</span>
+                  <p>쿨 밴딩 데님팬츠</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_07.jpg" alt="쇼핑이미지" />
+                  <span>전상품 UPTO50%↓</span>
+                  <p>역대급 반응폭발!</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_08.jpg" alt="쇼핑이미지" />
+                  <span>놓치면 후회 특가</span>
+                  <p>최대~80%</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_09.jpg" alt="쇼핑이미지" />
+                  <span>진짜 극락갈정도</span>
+                  <p>시원함을 느껴요!</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_10.jpg" alt="쇼핑이미지" />
+                  <span>가볍게~들어요</span>
+                  <p>최대50%SALE</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_11.jpg" alt="쇼핑이미지" />
+                  <span>여름까지 가볍게</span>
+                  <p>예쁜 바람막이~</p>
+                </div>
+                <div class="shop_content_box">
+                  <img src="images/shop/shop_12.jpg" alt="쇼핑이미지" />
+                  <span>우린품격을입어요</span>
+                  <p>극찬받는 퀄리티</p>
+                </div>
+                <div class="shop_content_bottomBtn">
+                  <button>&#60;</button>
+                  <span>1/18</span>
+                  <button>&#62;</button>
+                </div>
+              </div>
+              <hr />
+              <div class="shopping_news_box">
+                <div class="shopping_news_hd">
+                  <p>반갑다! 쇼핑뉴스</p>
+                </div>
+                <ul>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>부영글로벌</span>2단 파라솔 14%↓할인중!</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>오뚜기mall</span>오뚜기 컵누들 짜장맛 무료배송</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>매일멍냥</span>카루 고양이습식 27%↓파격세일</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>마그피아</span>붙이는화이트보드 전제품
+                      98%↓세일</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>김성훈도자기</span>쏘에르 콜라보 최대 47%할인!</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>보드라움</span>오가닉 순면이불 할인+무료배송!</a>
+                  </li>
+                  <li>
+                    <span class="li_st"></span>
+                    <a href="#"><span>엘리샤펫</span>강아지 밀림방지 배변패드 75%↓</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="wrap">
-        <div class="ft_banner_wrap">
-          <div class="ft_banner_box">
-            <img src="images/footer_banner_01.jpg" alt="이미지" />
-            <div class="banner_text">
-              <span>강릉여행 캠페인</span>
-              <p class="banner_tit">여행 취소하지 마세요!</p>
-              <p>강릉으로 더나는 기부여행<br />강릉에서 느끼는 힐링여행</p>
-            </div>
-          </div>
-          <div class="ft_banner_box">
-            <img src="images/footer_banner_02.png" alt="이미지" />
-            <div class="banner_text">
-              <span>한국문화재단</span>
-              <p class="banner_tit">2023 봄 궁중문화축전</p>
-              <p>4월 29일 ~ 5월 7일<br />오늘, 궁을 만나다</p>
-            </div>
-          </div>
-          <div class="ft_banner_box">
-            <img src="images/footer_banner_03.jpg" alt="이미지" />
-            <div class="banner_text">
-              <span>경기남부청X분당경찰서</span>
-              <p class="banner_tit">동네경찰 프로젝트</p>
-              <p>경찰이 알려주는<br />우리동네 이야기</p>
-            </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="ft_banner_wrap">
+        <div class="ft_banner_box">
+          <img src="images/footer_banner_01.jpg" alt="이미지" />
+          <div class="banner_text">
+            <span>강릉여행 캠페인</span>
+            <p class="banner_tit">여행 취소하지 마세요!</p>
+            <p>강릉으로 더나는 기부여행<br />강릉에서 느끼는 힐링여행</p>
           </div>
         </div>
-        <div class="notice_wrap">
-          <a href="#">공지사항</a>
-          <a href="#">서비스 전체보기</a>
-        </div>
-        <div class="partner_wrap">
-          <div class="partner_box">
-            <ul class="partner_list">
-              <span>Creators</span>
-              <li><a href="#">크리에이터</a></li>
-              <li><a href="#">스몰비즈니스</a></li>
-            </ul>
-            <ul class="partner_list">
-              <span>Partners</span>
-              <li><a href="#">SME 풀케어 시스템</a></li>
-              <li><a href="#">비즈니스/광고</a></li>
-              <li><a href="#">스토어 개설</a></li>
-              <li><a href="#">지역업체 등록</a></li>
-              <li><a href="#">액스퍼트 등록</a></li>
-            </ul>
-            <ul class="partner_list">
-              <span>Developers</span>
-              <li><a href="#">네이버 개발자 센터</a></li>
-              <li><a href="#">오픈 API</a></li>
-              <li><a href="#">오픈소스</a></li>
-              <li><a href="#">네이버 D2</a></li>
-              <li><a href="#">네이버 D2SF</a></li>
-              <li><a href="#">네이버 랩스</a></li>
-            </ul>
-          </div>
-          <div class="project_banner">
-            <div class="project_box">
-              <div class="pjt_text">
-                <p>웨일 브라우저</p>
-                <span>다운받기</span>
-              </div>
-              <img src="images/whale_logo.png" alt="웨일 브라우저" />
-            </div>
-            <div class="project_box">
-              <div class="pjt_text">
-                <p>프로젝트 꽃</p>
-                <span>바로가기</span>
-              </div>
-              <img src="images/flower_logo.png" alt="프로젝트 꽃" />
-            </div>
+        <div class="ft_banner_box">
+          <img src="images/footer_banner_02.png" alt="이미지" />
+          <div class="banner_text">
+            <span>한국문화재단</span>
+            <p class="banner_tit">2023 봄 궁중문화축전</p>
+            <p>4월 29일 ~ 5월 7일<br />오늘, 궁을 만나다</p>
           </div>
         </div>
-        <div class="info_wrap">
-          <ul class="info_list">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">인재채용</a></li>
-            <li><a href="#">제휴제안</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li>
-              <a href="#"><span>개인정보처리방침</span></a>
-            </li>
-            <li><a href="#">청소년보호정책</a></li>
-            <li><a href="#">네이버 정책</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li>
-              <a href="#"><span>ⓒ NAVER Corp.</span></a>
-            </li>
+        <div class="ft_banner_box">
+          <img src="images/footer_banner_03.jpg" alt="이미지" />
+          <div class="banner_text">
+            <span>경기남부청X분당경찰서</span>
+            <p class="banner_tit">동네경찰 프로젝트</p>
+            <p>경찰이 알려주는<br />우리동네 이야기</p>
+          </div>
+        </div>
+      </div>
+      <div class="notice_wrap">
+        <a href="#">공지사항</a>
+        <a href="#">서비스 전체보기</a>
+      </div>
+      <div class="partner_wrap">
+        <div class="partner_box">
+          <ul class="partner_list">
+            <span>Creators</span>
+            <li><a href="#">크리에이터</a></li>
+            <li><a href="#">스몰비즈니스</a></li>
+          </ul>
+          <ul class="partner_list">
+            <span>Partners</span>
+            <li><a href="#">SME 풀케어 시스템</a></li>
+            <li><a href="#">비즈니스/광고</a></li>
+            <li><a href="#">스토어 개설</a></li>
+            <li><a href="#">지역업체 등록</a></li>
+            <li><a href="#">액스퍼트 등록</a></li>
+          </ul>
+          <ul class="partner_list">
+            <span>Developers</span>
+            <li><a href="#">네이버 개발자 센터</a></li>
+            <li><a href="#">오픈 API</a></li>
+            <li><a href="#">오픈소스</a></li>
+            <li><a href="#">네이버 D2</a></li>
+            <li><a href="#">네이버 D2SF</a></li>
+            <li><a href="#">네이버 랩스</a></li>
           </ul>
         </div>
+        <div class="project_banner">
+          <div class="project_box">
+            <div class="pjt_text">
+              <p>웨일 브라우저</p>
+              <span>다운받기</span>
+            </div>
+            <img src="images/whale_logo.png" alt="웨일 브라우저" />
+          </div>
+          <div class="project_box">
+            <div class="pjt_text">
+              <p>프로젝트 꽃</p>
+              <span>바로가기</span>
+            </div>
+            <img src="images/flower_logo.png" alt="프로젝트 꽃" />
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="info_wrap">
+        <ul class="info_list">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#">제휴제안</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li>
+            <a href="#"><span>개인정보처리방침</span></a>
+          </li>
+          <li><a href="#">청소년보호정책</a></li>
+          <li><a href="#">네이버 정책</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li>
+            <a href="#"><span>ⓒ NAVER Corp.</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
