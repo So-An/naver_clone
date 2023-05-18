@@ -18,6 +18,29 @@ $('document').ready(function () {
     })
   }
   setInterval(rollingTop, 3000);
+
+
+
+  /*이슈 롤링 외않되?_? 잉? 어잉? 으잉/??*/
+  let issueFlashHeight = $('.issue_list li').height();
+  let issueNum = $('.issue_list li').length;
+  let issueMax = issueFlashHeight * issueNum;
+  let issueMove = 0;
+
+  function issueRollingTop() {
+    issueMove += issueFlashHeight;
+    $('.issue_list').animate({
+      "top": -issueMove
+    }, 500, function () {
+      if (issueMove >= issueMax) {
+        $(this).css("top", 0);
+        issueMove = 0;
+      }
+    })
+  }
+  setInterval(issueRollingTop, 3000);
+
+
   /*=======================================================*/
   let originalHtml;
   let changeHtml = `
@@ -42,29 +65,29 @@ $('document').ready(function () {
   $('.main_lt__press_box a').mouseout(function () {
     $(this).html(originalHtml);
   })
-
-  $('.loggin_bottom > a').click(function () {
-    $(this).css("background-color", "#fff");
-    $('.my_service').css('display', 'block');
-
-  });
-
-
-
-
-
-
 });
 
 function loggin() {
   document.getElementById('loggin_area').innerHTML = loginHtml;
   document.getElementById('loggin_area').classList.add('active');
+
+  $('.loggin_bottom > a').click(function () {
+    $(this).toggleClass('active');
+    $(this).siblings().removeClass('active');
+    $('.my_service').css('display', 'block');
+    $('.issue_box').css('display', 'none');
+    $('.sub_ad_banner').css('display', 'none');
+
+  });
 }
 
 
 function loggout() {
   document.getElementById('loggin_area').innerHTML = logoutHtml;
   document.getElementById('loggin_area').classList.remove('active');
+  $('.my_service').css('display', 'none');
+  $('.issue_box').css('display', 'block');
+    $('.sub_ad_banner').css('display', 'block');
 }
 
 

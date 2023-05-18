@@ -687,6 +687,11 @@
   line-height: 45px;
 }
 
+.loggin_bottom a.active {
+  border-bottom: 0;
+  background-color: #fff;
+}
+
 .loggin_bottom a:last-child {
   border-right: 0;
 }
@@ -834,6 +839,7 @@
   border: 1px solid #d7d7d7;
   border-top: 0;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .service_hd {
@@ -958,7 +964,65 @@
   height: 50px;
   padding: 12px 15px;
   margin: 20px 0;
+  overflow: hidden;
 }
+
+.issue_list {
+  display: flex;
+  flex-flow: column wrap;
+ 
+  font-size: 12px;
+}
+
+.issue_list li {
+  display: flex;
+  /* background-color: skyblue; */
+  flex-flow: row;
+  padding: 5px;
+  padding-left: 0;
+  margin-bottom: 5px;
+  
+}
+
+/* .issue_list li.active{
+  display: flex;
+} */
+
+.issue_icon {
+  display: block;
+  width: 30px;
+  font-weight: 700;
+}
+
+.issue_sub_tit {
+  color: #505050;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.issue_list li:first-child > a{
+  font-weight: 400 ;
+}
+
+.issue_list li > a {
+  font-weight: 700;
+}
+
+.issue_amount {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.amt_up {
+  color: #F05A5A;
+
+}
+
+.amt_down {
+  color: #2586EE;
+}
+
+/*--------------------------------------*/
 
 .sub_ad_banner {
   width: 100%;
@@ -1055,6 +1119,54 @@
 
 .shop_content_topBtn {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: pink; */
+  margin-bottom: 5px;
+}
+
+.shop_content_topBtn span {
+  margin-right: 5px;
+}
+
+.shop_content_topBtn button {
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  border: 1px solid #d5d3d3;
+  color: #808080;
+}
+
+/* .shop_content_topBtn button:first-child{
+  border-right: none;
+} */
+
+.shop_content_topBtn button:hover {
+  background-color: #efefef;
+}
+
+.shop_content_bottomBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_content_bottomBtn span {
+  margin: 0 5px;
+}
+
+.shop_content_bottomBtn button{
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  border: 1px solid #d5d3d3;
+  color: #808080;
+}
+
+.shop_content_bottomBtn button:hover {
+  background-color: #efefef;
 }
 
 .shopping_news_box {
