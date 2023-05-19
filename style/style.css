@@ -262,11 +262,15 @@
   margin-left: 10px;
 }
 
+.news_home {
+  padding-left: 0;
+}
 
 
 .mian_lt__news_links_box a {
   padding-left: 10px;
 }
+
 
 .main_lt__news_tit_area {
   width: 100%;
@@ -487,6 +491,15 @@
   margin-top: 10px;
   font-size: 12px;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+
+.enter_tit {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .hot_content {
