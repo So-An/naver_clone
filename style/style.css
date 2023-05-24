@@ -171,8 +171,27 @@
 }
 
 .weather_wrap {
-  background-color: pink;
+  display: flex;
+  align-items: center;
 }
+
+.weather_wrap a{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #03c75a;
+}
+
+.weather_wrap img {
+  height: 40px;
+  padding-right: 5px;
+}
+
+.weather_wrap a:hover {
+  color: #096d2a;
+}
+
+
 
 .main {
   min-height: 100px;
@@ -855,6 +874,15 @@
   margin-bottom: 20px;
 }
 
+.my_service.active{
+  display: block;
+}
+
+.issue_box.active, .sub_ad_banner.active{
+  display: none;
+}
+
+
 .service_hd {
   height: 46px;
 }
@@ -897,9 +925,15 @@
 
 .timeline_list {
   display: flex;
+  height: 100%;
   flex-flow: column;
   /*padding: 10px;*/
   font-size: 12px;
+}
+
+.timeline_clear {
+  margin-top: 110px;
+  font-weight: 700;
 }
 
 .timeline_list li {
@@ -913,9 +947,6 @@
   border: 0;
 }
 
-.timeline_list li:first-child {
-  background-color: yellow;
-}
 
 .timeline_list li::before {
   display: block;
@@ -967,8 +998,36 @@
 }
 
 .service_footer {
+  display: flex;
+  align-items: center;
   height: 40px;
   background-color: #f7f9fa;
+  border-bottom: 1px solid #d5d3d3;
+  font-size: 12px;
+}
+
+.service_footer_box {
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  
+}
+
+.service_footer_box img {
+  display: block;
+  width: 18px;
+  padding: 5px;
+  padding-right: 0;
+}
+
+
+.service_footer_box a {
+  display: block;
+  padding: 5px;
+}
+
+.service_footer_box a:hover{
+  text-decoration: underline;
 }
 
 /*--------------------------------------*/
@@ -1190,10 +1249,47 @@
 }
 
 .shopping_news_hd {
-  font-weight: 700;
-  color: #202020;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 5px;
 }
+
+.shopping_news_hd p {
+  font-weight: 700;
+  color: #202020;
+}
+
+.shopping_news_Btn {
+  padding-top: 2px;
+}
+
+.shopping_news_BtnBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.shopping_news_BtnBox span {
+  margin-right: 5px;
+}
+
+.shopping_news_BtnBox button {
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  border: 1px solid #d5d3d3;
+  color: #808080;
+}
+
+
+.shopping_news_BtnBox button:hover {
+  background-color: #efefef;
+}
+
 
 .shopping_news_box ul li a {
   display: block;
@@ -1228,7 +1324,7 @@ hr {
   height: 3px;
   border-radius: 100%;
   margin: 0 8px;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 /*========== 푸터 ==========*/

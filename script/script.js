@@ -65,6 +65,30 @@ $('document').ready(function () {
   $('.main_lt__press_box a').mouseout(function () {
     $(this).html(originalHtml);
   })
+
+  /*===========알림 타임라인 삭제===========*/
+  let timelineLength = 0;
+  $('.timeline_delete').click(function(){
+    timelineLength = $('.timeline_list li').length;
+    $(this).parent('li').remove();
+    if(timelineLength == 0){
+      $('.timeline_list').append(`<p class="timeline_clear">알림이 없습니다</p>`);
+      $('.timeline_list').css({'align-items':'center','justify-content':'center'});
+      
+    }
+    else if(timelineLength <= 4) {
+      $('.service_body').css('overflow','hidden');
+    }
+  });
+
+  $('.timeline_removeAll').click(function(){
+    $('.timeline_list').children('li').remove();
+    $('.timeline_list').append(`<p class="timeline_clear">알림이 없습니다</p>`);
+    $('.timeline_list').css({'align-items':'center','justify-content':'center'});
+    $('.service_body').css('overflow','hidden');
+  })
+  /*========================================= */
+
 });
 
 function loggin() {
@@ -74,10 +98,9 @@ function loggin() {
   $('.loggin_bottom > a').click(function () {
     $(this).toggleClass('active');
     $(this).siblings().removeClass('active');
-    $('.my_service').css('display', 'block');
-    $('.issue_box').css('display', 'none');
-    $('.sub_ad_banner').css('display', 'none');
-
+    $('.my_service').toggleClass('active');
+    $('.issue_box').toggleClass('active');
+    $('.sub_ad_banner').toggleClass('active');
   });
 }
 
@@ -85,9 +108,13 @@ function loggin() {
 function loggout() {
   document.getElementById('loggin_area').innerHTML = logoutHtml;
   document.getElementById('loggin_area').classList.remove('active');
-  $('.my_service').css('display', 'none');
-  $('.issue_box').css('display', 'block');
-    $('.sub_ad_banner').css('display', 'block');
+  $('.my_service').removeClass('active');
+  $('.issue_box').removeClass('active');
+  $('.sub_ad_banner').removeClass('active');
+  $('.timeline_list').children().remove();
+  $('.timeline_list').css({'align-items':'','justify-content':''});
+  $('.service_body').css('overflow-y','scroll');
+  $('.timeline_list').append(timeline_data);
 }
 
 
@@ -141,3 +168,141 @@ let loginHtml = `<div id="loggin_state">
       </div>
     </div>
   </div>`
+
+  let timeline_data = `
+  <li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>
+<li>
+  <div class="timeline_info">
+    <a href="#">
+      <div class="timeline_info_tit">
+        <span>6년 전, 28장의 사진이 도착했어요</span>
+      </div>
+      <div class="timeline_info_sub">
+        <span>네이버 MYBOX</span>
+        <span>by 6년전</span>
+        <span>오전 9시 08분</span>
+      </div>
+    </a>
+  </div>
+  <div class="timeline_delete">
+    <a href="#"><img src="images/delete_icon.png" alt="삭제"></a>
+  </div>
+</li>`
