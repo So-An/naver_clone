@@ -15,6 +15,11 @@
 }
 
 /*---------*/
+body {
+  width: 100%;
+  min-width: 1280px;
+  margin: 0 auto;
+}
 
 .wrap {
   width: 1080px;
@@ -22,8 +27,9 @@
 }
 
 .header {
+  width: 100%;
   height: 212px;
-  display: flex;
+  /*display: flex;*/
   flex-flow: column;
 }
 
@@ -59,7 +65,6 @@
 .search_area__search_box img {
   width: 21px;
 }
-
 
 .logo_box {
   width: 222px;
@@ -128,7 +133,6 @@
 
 .gnb_item.active {
   color: #03c75a;
-
 }
 
 .gnb_wrap__gnb_area li a {
@@ -175,7 +179,7 @@
   align-items: center;
 }
 
-.weather_wrap a{
+.weather_wrap a {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -190,8 +194,6 @@
 .weather_wrap a:hover {
   color: #096d2a;
 }
-
-
 
 .main {
   min-height: 100px;
@@ -231,7 +233,7 @@
   overflow: hidden;
 }
 
-.main_lt__newsFlash_area>h2 {
+.main_lt__newsFlash_area > h2 {
   font-size: 13px;
   color: #000;
   font-weight: 700;
@@ -253,7 +255,6 @@
   position: absolute;
 }
 
-
 .main_lt__newsFlash_box li a {
   display: block;
   height: 50px;
@@ -271,7 +272,7 @@
   color: #3565c9;
 }
 
-.mian_lt__news_links_box>span {
+.mian_lt__news_links_box > span {
   display: block;
   width: 3px;
   height: 3px;
@@ -285,11 +286,9 @@
   padding-left: 0;
 }
 
-
 .mian_lt__news_links_box a {
   padding-left: 10px;
 }
-
 
 .main_lt__news_tit_area {
   width: 100%;
@@ -320,7 +319,7 @@
   padding-right: 10px;
 }
 
-.mian_lt__news_links_box>span {
+.mian_lt__news_links_box > span {
   display: block;
   width: 3px;
   height: 3px;
@@ -391,7 +390,6 @@
 .press_box_hover {
   display: flex;
   font-size: 10px;
-
 }
 
 .press_box_hover div {
@@ -410,8 +408,6 @@
 .press_box_hover div:hover {
   background-color: #f3f3f3;
 }
-
-
 
 .main_lt__today_hd_box {
   display: flex;
@@ -501,7 +497,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  
 }
 
 .enter_tit {
@@ -618,7 +613,7 @@
   border-bottom: 0;
 }
 
-.login_box>p {
+.login_box > p {
   color: #808080;
 }
 
@@ -697,7 +692,7 @@
 }
 
 .loggin_bottom a {
-  width: calc(100%/5);
+  width: calc(100% / 5);
   box-sizing: border-box;
   font-weight: 700;
   text-align: center;
@@ -708,7 +703,7 @@
   line-height: 45px;
 }
 
-.loggin_bottom a.active {
+.loggin_bottom a.on {
   border-bottom: 0;
   background-color: #fff;
 }
@@ -716,8 +711,6 @@
 .loggin_bottom a:last-child {
   border-right: 0;
 }
-
-
 
 .loggin_pf {
   width: 56px;
@@ -819,7 +812,6 @@
   background-color: #b7b9ba;
 }
 
-
 .loggin_info_bottom ul {
   display: flex;
   flex-flow: row;
@@ -828,12 +820,10 @@
 
 .loggin_info_bottom ul li {
   margin-right: 10px;
-
 }
 
 .loggin_info_bottom a {
   display: flex;
-
 }
 
 .loggin_info_bottom a:hover {
@@ -863,14 +853,14 @@
   margin-bottom: 20px;
 }
 
-.my_service.active{
+.my_service.active {
   display: block;
 }
 
-.issue_box.active, .sub_ad_banner.active{
+.issue_box.active,
+.sub_ad_banner.active {
   display: none;
 }
-
 
 .service_hd {
   height: 46px;
@@ -913,11 +903,15 @@
 }
 
 .timeline_list {
-  display: flex;
+  display: none;
   height: 100%;
   flex-flow: column;
   /*padding: 10px;*/
   font-size: 12px;
+}
+
+.timeline_list.active {
+  display: flex;
 }
 
 .timeline_clear {
@@ -935,7 +929,6 @@
 .timeline_list li:last-child {
   border: 0;
 }
-
 
 .timeline_list li::before {
   display: block;
@@ -999,7 +992,6 @@
   padding: 5px;
   box-sizing: border-box;
   display: flex;
-  
 }
 
 .service_footer_box img {
@@ -1009,13 +1001,12 @@
   padding-right: 0;
 }
 
-
 .service_footer_box a {
   display: block;
   padding: 5px;
 }
 
-.service_footer_box a:hover{
+.service_footer_box a:hover {
   text-decoration: underline;
 }
 
@@ -1027,7 +1018,6 @@
   margin: 20px 0;
   position: relative;
   overflow: hidden;
-  /* box-sizing: border-box; */
 }
 
 .issue_list {
@@ -1058,8 +1048,8 @@
   font-weight: 400;
 }
 
-.issue_list li:first-child > a{
-  font-weight: 400 ;
+.issue_list li:first-child > a {
+  font-weight: 400;
 }
 
 .issue_list li > a {
@@ -1072,12 +1062,11 @@
 }
 
 .amt_up {
-  color: #F05A5A;
-
+  color: #f05a5a;
 }
 
 .amt_down {
-  color: #2586EE;
+  color: #2586ee;
 }
 
 /*--------------------------------------*/
@@ -1106,7 +1095,6 @@
 
 .trend_hd li img {
   width: 12px;
-
 }
 
 .trend_hd li img:last-child {
@@ -1204,7 +1192,7 @@
   background-color: #efefef;
 }
 
-.shop_content_bottomBtn{
+.shop_content_bottomBtn {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1215,7 +1203,7 @@
   margin: 0 5px;
 }
 
-.shop_content_bottomBtn button{
+.shop_content_bottomBtn button {
   width: 25px;
   height: 25px;
   background-color: inherit;
@@ -1271,11 +1259,9 @@
   color: #808080;
 }
 
-
 .shopping_news_BtnBox button:hover {
   background-color: #efefef;
 }
-
 
 .shopping_news_box ul li a {
   display: block;
@@ -1317,6 +1303,7 @@ hr {
 .footer {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
   height: 422px;
   background-color: #fafbfc;
   border: 1px solid #f0f2f4;
