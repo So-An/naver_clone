@@ -478,17 +478,6 @@
   box-sizing: border-box;
 }
 
-
-.main_lt__today_nav_box a:nth-child(3) {
-  background-color: #66c971;
-  color: white;
-}
-
-.main_lt__today_nav_box a:nth-child(5) {
-  background-color: #c08d31;
-  color: white;
-}
-
 .main_lt__today_nav_box a:last-child {
   border-right: 1px solid #d5d3d3;
 }
@@ -1036,29 +1025,26 @@
   height: 50px;
   padding: 12px 15px;
   margin: 20px 0;
+  position: relative;
   overflow: hidden;
+  /* box-sizing: border-box; */
 }
 
 .issue_list {
   display: flex;
   flex-flow: column wrap;
- 
   font-size: 12px;
+  position: absolute;
+  top: 0;
 }
 
 .issue_list li {
   display: flex;
-  /* background-color: skyblue; */
+  height: 100%;
   flex-flow: row;
-  padding: 5px;
-  padding-left: 0;
-  margin-bottom: 5px;
-  
+  height: 50px;
+  align-items: center;
 }
-
-/* .issue_list li.active{
-  display: flex;
-} */
 
 .issue_icon {
   display: block;
